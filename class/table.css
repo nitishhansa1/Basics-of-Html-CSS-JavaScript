@@ -1,0 +1,27 @@
+table{
+    width: 80%;
+    border: 2px solid black;
+    padding: 1px;
+    text-align: center;
+    justify-content: center;
+    
+}
+tr{
+    border: 2px solid black;
+}
+
+th,td{
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+td{
+    color:indigo;
+}
+
+tfoot td{
+    color:chocolate;
+    font-weight: bold;
+    
+}

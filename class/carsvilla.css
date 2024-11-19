@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.nav{
+    display: flex;
+    position: relative;
+    left: 70px;
+    bottom: 10px;
+    background-color: black;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+}
+.home{
+    color: azure;
+    text-decoration: none;
+}
+.drive{
+    text-align: center;
+    margin: 20px;
+    
+}
+.service{
+    text-align: center;
+    margin: 30px;
+}
+.btn{
+    text-decoration: 0;
+    background-color: white;
+    border: 1.5px solid;
+    border-color: black;
+    border-radius:8px;
+    color: black;
+    padding: 2px;
+    position:relative;
+    left: 750px;
+
+}
+.or{
+    text-align: center;
+    text-decoration:overline;
+
+}
+.main{
+    text-align: center
+}

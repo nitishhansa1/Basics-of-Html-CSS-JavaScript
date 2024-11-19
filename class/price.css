@@ -1,0 +1,55 @@
+body{
+    background-color: antiquewhite;
+}
+.container{
+    display:inline-table;
+    justify-content: center;
+    margin: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 600px;
+}
+.basic{
+    border: 2px solid;
+    margin: 25px;
+    border-radius: 4px;
+    background-color: white;
+     
+}
+.basic:hover{
+    background-color: aqua;
+    box-shadow: 0 10px 14px;
+    padding: 10%;
+
+
+}
+
+.gold{
+    border:2px solid ;
+    margin:25px;
+    background-color: white;
+    border-radius: 4px
+
+}
+
+.gold:hover{
+    background-color: gold;
+    box-shadow: 0 10px 14px;
+    padding: 10px;
+}
+
+.platinum{
+    border: 2px solid;
+    margin: 25px;
+}
+
+.bttn{
+    border: 2px solid;
+    border-radius: 9px;
+    margin: 20px;
+    padding: 4px;
+    background-color: rgb(255, 255, 255);
+}

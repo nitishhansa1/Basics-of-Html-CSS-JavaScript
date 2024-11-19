@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+
+    <script>
+        for(let i=1;i<=5;i++){
+            console.log("Number",i)
+        }
+
+        //While//
+        let count=1
+        while(count<=10){
+            console.log("count is",count)
+        }
+
+
+        //Do While//
+        let num=1;
+        do{
+            console.log("Number",num);
+            num++;
+        }while(num<=8)
+
+
+        //Alert//
+        alert("Welcome to Javascript")
+        //confirm Box//
+        let isConfirm=confirm("do you want to continue with this website")
+        console.log("User Confirmed",isConfirm)
+
+        //Prompt Box//
+        let userName= prompt("please enter your name")
+        console.log("user name",userName)
+
+        //javascript object//
+        const person ={
+            firstName:"test",
+            lastName:"test1",
+            age:45
+        }
+
+        //Method//
+        getFullName:function(){
+            return '${this.firstName} ${this.lastName}'
+        }
+
+        //acess the object properties and methods//
+        console.log("Full Name",person.getFullName)
+    </script>
+
+</body>
+</html>

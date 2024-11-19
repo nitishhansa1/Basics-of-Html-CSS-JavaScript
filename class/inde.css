@@ -1,0 +1,17 @@
+.container{
+    background-color: aqua;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px;
+    grid-gap: 10px;
+}
+body{
+    margin: 40px;
+}
+
+.box{
+    background-color: aquamarine;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}

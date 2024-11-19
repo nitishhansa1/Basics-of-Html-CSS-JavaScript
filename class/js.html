@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title></head>
+<body>
+    <h1>Javascript Events</h1>
+    <button onclick="toogleMessage()" onmouseover="showMouseOver()" onmouseout="showMouseOut()">
+        Hover or Click
+    </button>
+    <label for="name">Type Your Name</label>
+    <input type="text" class="input-field" id="name" onkeyup="showKeyup(event)" onkeydown="showKeydown(event)" onchange="showChange()">
+<p id="message">Button Clicked</p>
+    <p id="hoverStatus"></p>
+    <p id="keyStatus"></p>
+
+
+
+    <h1>Form Validation By Javascript</h1>
+    <form onsubmit="return validateForm()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label type="Email" id="Email">Email</label>
+            <input type="Email" id="Email">
+            <label for="Phone">Phone Number</label>
+            <input type="number" id="number" name="number">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Submit</button>
+
+        </div>
+    </form>
+
+    <script>
+        function toogleMessage(){
+            const message= document.getElementById('message')
+            message.classList.toogle('hidden')
+        }
+
+        function showMouseOver(){
+            const hoverStatus= document.getElementById("hoverStatus")
+            hoverStatus.textContent= "Mouse Over"
+            hoverStatus.style.color="blue"
+        }
+
+        function showMouseOut(){
+            const hoverStatus=document.getElementById("hoverStatus")
+            hoverStatus.textContent="Mouse Out"
+            hoverStatus.style.color="red"
+        }
+
+        function showKeyup(){
+            const keyStatus=document.getElementById("keyStatus")
+            keyStatus.textContent=' Key Up/Pressed : ${event.key} (Code : ${event.keyCode}) ';
+        }
+
+        function showKeydown(){
+            const keyStatus=document.getElementById("keyStatus")
+            keyStatus.textContent=' Key Down : ${event.key} (Code : ${event.keyCode}) ';
+        }
+
+    </script>
+
+
+<script>
+    function validateForm(){
+        let isValid= true
+        const name =document.getElementById("name").value;
+        if(name===""){
+            document.getElementById("nameerror").textContent="name is required"
+            isValid= false
+        }
+    }
+</script>
+
+
+</body>
+</html>
